@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+<h6>{{ site.author }}, <em>{{ post.date | date_to_string }}</em></h6>
+<p>
+	{{ post.content }}
+</p>
+<hr/>
+{% endfor %}
