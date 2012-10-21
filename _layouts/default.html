@@ -8,27 +8,26 @@
 
 	    <link rel="stylesheet" href="/asset/css/app.css">
 	    <link href="{{ site.url }}/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-	    <script src="/asset/js/foundation/modernizr.foundation.js"></script>
-	    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     </head>
     <body>
     	<!-- Navigation -->
-    	<div class="contain-to-grid">
-			<nav class="top-bar">
-			  	<ul>
-				    <li class="name"><h1><a href="{{ site.url }}">{{ site.title }}</a></h1></li>
-				    <li class="toggle-topbar"><a href="#"></a></li>
-			  	</ul>
-			  	<section>
-				    <ul class="right">
-				      	<li><a href="{{ site.url }}/about/">About</a></li>
-				    </ul>
-			  	</section>
-			</nav>
-		</div>
+        <div class="contain-to-grid">
+            <nav class="top-bar">
+                <ul>
+                    <li class="name"><h1><a href="{{ site.url }}">{{ site.title }}</a></h1></li>
+                    <li class="toggle-topbar"><a href="#"></a></li>
+                </ul>
+                <section>
+                    <ul class="right">
+                        <li><a href="{{ site.url }}/about/">About</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
 
+        <!-- Body -->
     	<div class="row">
-    		<div class="twelve columns">
+    		<div class="eight columns centered">
     			{% if page.title %}
     				<h1>{{ page.title }}</h1>
     			{% endif %}
@@ -37,19 +36,17 @@
     		</div>
     	</div>
 
-	    <!-- Included JS Files (Uncompressed) -->
-	    <script src="javascripts/foundation/jquery.js"></script>
-	    <script src="javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
-	    <script src="javascripts/foundation/jquery.foundation.reveal.js"></script>
-	    <script src="javascripts/foundation/jquery.foundation.alerts.js"></script>
-	    <script src="javascripts/foundation/jquery.foundation.tabs.js"></script>
-	    <script src="javascripts/foundation/jquery.foundation.navigation.js"></script>
-	    <script src="javascripts/foundation/jquery.foundation.accordion.js"></script>
-	    <script src="javascripts/foundation/jquery.foundation.forms.js"></script>
-	    <script src="javascripts/foundation/jquery.foundation.tooltips.js"></script>
-	    <script src="javascripts/foundation/jquery.foundation.orbit.js"></script>
-	    <script src="javascripts/foundation/jquery.foundation.topbar.js"></script>
-	    <script src="javascripts/foundation/jquery.foundation.buttons.js"></script>
-        <script src="javascripts/foundation/app.js"></script>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="eight columns centered">
+                    &copy; 2012 {{ site.author }}. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+        <!-- Foundation JS -->
+	    <script src="{{ site.url }}/asset/js/foundation/foundation.min.js"></script>
+        <script src="{{ site.url }}/asset/js/foundation/app.js"></script>
     </body>
 </html>
