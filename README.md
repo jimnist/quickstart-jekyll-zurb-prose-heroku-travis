@@ -28,18 +28,33 @@ Clone the repository and install its dependencies:
 
     git clone git://github.com/lvillani/quickstart-jekyll-zurb.git my-project
     cd my-project
-    git remote rename origin quickstart-jekyll-zurb
-    bundle install
+    make setup
 
-Customize `_config.yml` to suit your needs. You usually only have to edit
-entries below "Site-specific Settings".
+Please note that after you run `make setup` your master branch won't be tracking
+`origin/master` anymore anymore and the remote will be renamed from `origin` to
+`quickstart-jekyll-zurb`.
 
-Use Foreman to start the development server and re-generate SASS stylesheets
-upon changes:
+Then customize `_config.yml` to suit your needs. You usually only have to edit
+entries below the "Site-specific Settings" comment.
 
-    bundle exec foreman start
+To start the development server and re-generate SASS stylesheets upon changes:
 
-Then use your favorite editor and start working on your site.
+    make devel
+
+Then use your favorite editor to work on your site.
+
+### Deployment
+
+The top-level Makefile supports deployment to Github Pages via the `deploy`
+target. It assumes you have configured your master branch to properly track a
+remote branch (something you have to do manually).
+
+Running:
+
+    make deploy
+
+Will commit any update to generated files (minified CSS and JS files), then push
+all changes to your Github Pages repository.
 
 
 
