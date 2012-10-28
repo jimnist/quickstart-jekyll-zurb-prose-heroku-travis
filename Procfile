@@ -1,2 +1,2 @@
 compass: compass watch
-jekyll: jekyll
+jekyll: jekyll --url "http://localhost:4000"
