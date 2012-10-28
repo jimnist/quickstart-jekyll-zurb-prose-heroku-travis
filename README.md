@@ -31,7 +31,7 @@ Clone the repository and install its dependencies:
     make setup
 
 Please note that after you run `make setup` your master branch won't be tracking
-`origin/master` anymore anymore and the remote will be renamed from `origin` to
+`origin/master` anymore and the remote will be renamed from `origin` to
 `quickstart-jekyll-zurb`.
 
 Then customize `_config.yml` to suit your needs. You usually only have to edit
