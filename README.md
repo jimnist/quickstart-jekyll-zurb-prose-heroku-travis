@@ -47,7 +47,8 @@ Then use your favorite editor to work on your site.
 
 The top-level Makefile supports deployment to Github Pages via the `deploy`
 target. It assumes you have configured your master branch to properly track a
-remote branch (something you have to do manually).
+remote branch pointing to your Github repository (something you have to do
+manually).
 
 Running:
 
