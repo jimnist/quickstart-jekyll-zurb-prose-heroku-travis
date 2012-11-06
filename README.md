@@ -24,24 +24,25 @@ Goodies
 Getting Started
 ===============
 
-Clone the repository and install its dependencies:
+Export the `QUICKSTART_PROJECT_NAME` environment variable which is used by the
+top-level Makefile to set-up your project. It must follow Python package
+naming conventions:
 
-    git clone git://github.com/lvillani/quickstart-jekyll-zurb.git my-project
-    cd my-project
+    export QUICKSTART_PROJECT_NAME=my_project
+
+Then clone this repository and install required Ruby gems:
+
+    git clone -o quickstart-jekyll-zurb git://github.com/lvillani/quickstart-jekyll-zurb.git ${QUICKSTART_PROJECT_NAME}
+    cd ${QUICKSTART_PROJECT_NAME}
     make setup
 
-Please note that after you run `make setup` your master branch won't be tracking
-`origin/master` anymore and the remote will be renamed from `origin` to
-`quickstart-jekyll-zurb`.
+Please note that after the setup process completes, your master branch won't
+be tracking the `quickstart-jekyll-zurb` repository anymore.
 
-Then customize `_config.yml` to suit your needs. You usually only have to edit
-entries below the "Site-specific Settings" comment.
+To start the Django development server (along with any other worker process
+such as Compass) run:
 
-To start the development server and re-generate SASS stylesheets upon changes:
-
-    make devel
-
-Then use your favorite editor to work on your site.
+    make runserver
 
 ### Deployment
 
