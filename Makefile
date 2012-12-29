@@ -1,5 +1,3 @@
-QUICKSTART_PROJECT_NAME ?= quickstart-jekyll-zurb
-
 #
 # Setup
 #

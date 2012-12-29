@@ -10,8 +10,8 @@
         <title>{{ site.title }}</title>
         {% endif %}
 
-	    <link rel="stylesheet" href="{{ site.url }}/asset/css/app.css">
-	    <link href="{{ site.url }}/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+        <link rel="alternate" href="{{ site.url }}/atom.xml" type="application/atom+xml" title="Sitewide ATOM Feed">
+        <link rel="stylesheet" href="{{ site.url }}/asset/css/app.css">
     </head>
     <body>
     	<!-- Navigation -->
@@ -49,12 +49,7 @@
             </div>
         </footer>
 
-        <!-- Foundation JS -->
-        <script src="{{ site.url }}/asset/js/foundation/modernizr.foundation.js"></script>
-        <script src="{{ site.url }}/asset/js/foundation/jquery.js"></script>
-        <script src="{{ site.url }}/asset/js/foundation/jquery.offcanvas.js"></script>
-        <script src="{{ site.url }}/asset/js/foundation/jquery.placeholder.js"></script>
-        <script src="{{ site.url }}/asset/js/foundation/jquery.foundation.topbar.js"></script>
-        <script src="{{ site.url }}/asset/js/foundation/app.js"></script>
+        <!-- JavaScript (deferred) -->
+        <script src="{{ site.url }}/asset/js/app.js"></script>
     </body>
 </html>
