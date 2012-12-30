@@ -32,11 +32,14 @@
         <!-- Body -->
     	<div class="row">
             <div class="twelve columns">
-    			{% if page.title %}
-    				<h1>{{ page.title }}</h1>
-    			{% endif %}
+                {% if page.title %}
+                    <h1>{{ page.title }}</h1>
+                {% endif %}
+                {% if page.header %}
+                    <img alt="header" src="{{ site.url }}/asset/image/header/{{ page.header }}"/>
+                {% endif %}
 
-    			{{ content }}
+                {{ content }}
             </div>
     	</div>
 
