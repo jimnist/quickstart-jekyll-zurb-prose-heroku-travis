@@ -6,10 +6,10 @@ clean:
 	rm -rf _site
 
 deploy: clean all
-	cp -rv _site/asset ./
+	cp -r _site/asset ./
 	-git add asset
 	-git commit -m "quickstart: update generated assets for Github Pages"
-	-git push
+	-git push origin master
 
 runserver:
 	bundle exec foreman start
