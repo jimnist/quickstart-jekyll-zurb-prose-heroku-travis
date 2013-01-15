@@ -62,8 +62,12 @@ Running:
 
     make deploy
 
-Will commit any update to generated files (minified CSS and JS files), then push
-all changes to your Github Pages repository.
+Will commit any update to generated files (minified CSS and JS files), then
+push all changes to your Github Pages repository.
+
+__NOTE:__ The Github Pages deployment target won't upload a locally-generated
+version of your site but will let Github re-generate it using your source
+files as input (except for app.css and app.js files).
 
 
 
