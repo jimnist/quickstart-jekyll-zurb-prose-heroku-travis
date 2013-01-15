@@ -5,11 +5,11 @@ all:
 clean:
 	rm -rf _site
 
-deploy:
-	-git add asset/css/app.css
-	-git add asset/javascript/app.js
-	-git commit -m "Update generated assets."
-	-git push
+deploy: all
+	cp -rv _site/asset ./
+	git add asset
+	git commit -m "quickstart: update generated assets for Github Pages"
+	git push
 
 runserver:
 	bundle exec foreman start
