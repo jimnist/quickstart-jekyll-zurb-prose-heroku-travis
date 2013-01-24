@@ -1,6 +1,7 @@
 all:
 	bundle exec jekyll --no-server --no-auto
 	bundle exec compass compile
+	ruby sprockets.rb
 
 clean:
 	rm -rf _site

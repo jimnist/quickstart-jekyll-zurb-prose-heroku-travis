@@ -1,12 +1,13 @@
-Contents
-========
+Jekyll + ZURB Foundation Quickstart
+===================================
 
-Clone this repository to quickly set-up a Jekyll project which uses ZURB
-Foundation, Compass and SASS.
+A template project to quickly start a new project based on ZURB Foundation
+and the Jekyll static site generator.
 
-Unlike other projects (such as Octopress), this is a very minimal skeleton
-repository upon which you can build your project. You _have_ to understand all
-the moving parts and how they are configured.
+Unlike other projects (such as Octopress), this is a minimal skeleton
+repository upon which you can build your project. You _have_ to understand
+all the moving parts and how they are configured.
+
 
 
 
@@ -19,6 +20,7 @@ What's Inside
 * Compass;
 * ZURB Foundation;
 * Foreman;
+* Sprockets;
 
 ## Goodies
 
@@ -29,19 +31,14 @@ What's Inside
 
 
 
+
 Getting Started
 ===============
 
-Export the `QUICKSTART_DIR` environment variable which is used by the
-top-level Makefile to set-up your project. It must follow Python package
-naming conventions:
+Clone this repository and perform the automated setup procedure:
 
-    export QUICKSTART_DIR=my_project
-
-Then clone this repository and perform the automated setup procedure:
-
-    git clone git://github.com/lvillani/quickstart-jekyll-zurb.git ${QUICKSTART_DIR}
-    cd ${QUICKSTART_DIR}
+    git clone git://github.com/lvillani/quickstart-jekyll-zurb.git my-site
+    cd my-site
     make setup
 
 Please note that after the setup process completes, your master branch won't
@@ -68,11 +65,3 @@ push all changes to your Github Pages repository.
 __NOTE:__ The Github Pages deployment target won't upload a locally-generated
 version of your site but will let Github re-generate it using your source
 files as input (except for app.css and app.js files).
-
-
-
-Project Information
-===================
-
-* Home Page: https://github.com/lvillani/quickstart-jekyll-zurb
-* Issue Tracker: https://github.com/lvillani/quickstart-jekyll-zurb/issues
