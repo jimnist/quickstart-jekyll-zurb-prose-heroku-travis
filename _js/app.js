@@ -1,4 +1,7 @@
+//= include foundation/jquery
+//= include foundation/jquery.placeholder
 //= include foundation/jquery.foundation.topbar
+//= include foundation/modernizr.foundation
 
 ;(function ($, window, undefined) {
   'use strict';
