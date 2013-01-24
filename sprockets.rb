@@ -17,7 +17,7 @@ Bundler.require
 
 # Configuration
 ROOT        = Pathname(File.dirname(__FILE__)).expand_path()
-BUNDLES     = %w( foundation/app.js )
+BUNDLES     = %w( app.js )
 BUILD_DIR   = ROOT.join("_site/asset/js").expand_path()
 SOURCE_DIR  = ROOT.join("_js").expand_path()
 
