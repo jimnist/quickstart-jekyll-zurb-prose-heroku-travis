@@ -2,12 +2,9 @@
 # Jekyll Configuration
 # -----------------------------------------------
 
-auto: true
 markdown: rdiscount
 permalink: pretty
 pygments: true
-safe: true
-server: true
 
 # -----------------------------------------------
 # Site-specific Settings

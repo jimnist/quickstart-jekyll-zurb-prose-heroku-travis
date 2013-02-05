@@ -5,9 +5,9 @@ require "zurb-foundation"
 # -----------------------------------------------
 
 http_path = "/"
-css_dir = "_site/asset/css"
-images_dir = "_site/asset/image"
-javascripts_dir = "_site/asset/js"
+css_dir = "asset/css"
+images_dir = "asset/image"
+javascripts_dir = "asset/js"
 sass_dir = "_sass"
 
 # -----------------------------------------------

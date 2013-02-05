@@ -1,23 +1,31 @@
-all:
-	bundle exec jekyll --no-server --no-auto
-	bundle exec compass compile
-	ruby sprockets.rb
+#
+# Clean/Compile Life-cycle
+#
+
+all: clean compile
+
 
 clean:
 	rm -rf _site
 
-deploy: clean all
-	cp -r _site/asset ./
-	-git add asset
-	-git commit -m "quickstart: update generated assets for Github Pages"
-	-git push origin master
 
-runserver:
+compile:
+	bundle exec jekyll --no-server --no-safe --no-auto
+	bundle exec compass compile -c compass.rb
+
+
+runserver: clean
 	bundle exec foreman start
 
-setup:
-	bundle install
-	git config --unset branch.master.remote
-	git config --unset branch.master.merge
 
-.PHONY : all clean deploy runserver setup
+.PHONY: all clean compile runserver
+
+#
+# Developer Setup
+#
+
+setup:
+	sudo apt-get -y install python-pygments
+	bundle install
+
+.PHONY: setup
