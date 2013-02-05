@@ -65,3 +65,22 @@ push all changes to your Github Pages repository.
 __NOTE:__ The Github Pages deployment target won't upload a locally-generated
 version of your site but will let Github re-generate it using your source
 files as input (except for app.css and app.js files).
+
+
+
+
+Directory & File Layout
+=======================
+
+    .
+    ├── asset/         -- Static assets (e.g.: images)
+    ├── _layouts/      -- Jekyll Layouts
+    ├── _posts/        -- Blog posts
+    ├── _sass/         -- SASS/SCSS (processed by Compass)
+    ├── _site/         -- Output directory for generated content
+    ├── _config.yml    -- Jekyll Configuration file
+    ├── compass.rb     -- Compass configuration file
+    ├── Gemfile        -- Ruby Bundler configuration file
+    ├── Makefile       -- Top level Makefile
+    ├── Procfile       -- Foreman configuration file
+    └── robots.txt     -- Directives for web crawlers
