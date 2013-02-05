@@ -20,7 +20,6 @@ What's Inside
 * Compass;
 * ZURB Foundation;
 * Foreman;
-* Sprockets;
 
 ## Goodies
 
