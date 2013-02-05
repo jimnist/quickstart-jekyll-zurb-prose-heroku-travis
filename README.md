@@ -62,3 +62,30 @@ Directory & File Layout
     ├── Makefile       -- Top level Makefile
     ├── Procfile       -- Foreman configuration file
     └── robots.txt     -- Directives for web crawlers
+
+
+
+
+License
+=======
+
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or distribute
+this software, either in source code form or as a compiled binary, for any
+purpose, commercial or non-commercial, and by any means.
+
+In jurisdictions that recognize copyright laws, the author or authors of this
+software dedicate any and all copyright interest in the software to the public
+domain. We make this dedication for the benefit of the public at large and to
+the detriment of our heirs and successors. We intend this dedication to be an
+overt act of relinquishment in perpetuity of all present and future rights to
+this software under copyright law.
+
+Unless you really want to, do not even mention that the copied content
+originates from this skeleton library. Its sole purpose is to be copied into
+other projects.
+
+The above statements apply to all content in this skeleton library, even when
+the COPYING files, or the headers in the files state otherwise, they are just
+common examples.
