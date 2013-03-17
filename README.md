@@ -1,13 +1,13 @@
 TODO
 ====
 
-* un-HAML
-* test rss
 * prose.io-ify
 * heroku-ify
 * travis ci deploy
+* test rss
 
-Jekyll + ZURB Foundation + prose.io + heroku + travis ci Quickstart
+
+Jekyll + ZURB + prose.io + heroku + travis ci Quickstart
 ===================================
 
 started with a fork from [Jekyll + ZURB Foundation Quickstart](https://github.com/lvillani/quickstart-jekyll-zurb). 
