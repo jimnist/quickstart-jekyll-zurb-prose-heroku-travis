@@ -36,6 +36,6 @@ pygments: false # default python pygments have been replaced by pygments.rb
 prose:
   rooturl: "source"
   metadata:
-    "_posts": |
+    "source/_posts": |
       title:    "Title of your article"
       abstract: "Abstract"  
