@@ -7,6 +7,8 @@ changed to NOT use HAML, since the main sites that i am using this for need to b
 
 also set up to use prose.io and to deploy to [Heroku](http://heroku.com) using [Travis CI](http://travis-ci.org/) based on the strategy detailed [here](http://metabates.com/2012/10/23/deploying-to-heroku-from-travisci/).
 
+i also don't do the `make setup` step generally, because the sites i use this for are not programming blogs.
+
 
 What's Inside
 =============
