@@ -9,7 +9,7 @@ TODO
 Jekyll + ZURB Foundation Quickstart
 ===================================
 
-forked from [Jekyll + ZURB Foundation Quickstart](https://github.com/lvillani/quickstart-jekyll-zurb). 
+started with a fork from [Jekyll + ZURB Foundation Quickstart](https://github.com/lvillani/quickstart-jekyll-zurb). 
 
 changed to NOT use HAML, since the main sites that i am using this for need to be edited by end users/site-owners via [prose.io](http://prose.io/). 
 
@@ -19,7 +19,7 @@ i also got rid of `make setup` step generally, because the sites i use this for 
 
 i also modified the directory structure to be more like [octopress](http://octopress.org/) to have a **source** directory for the jekyll files so that i can point prose.io at that directory only and not have users mess with other files. i am also having output go to the top level **site** directory and sass files are generated from the **sass** directory.
 
-and, since i develop on a mac and also have to use some old PHP/apache apps from time to time and haven't figured out how to use [pow]() with those, i am using tmuxinator to set up and run server processes. included is a **tmuxinator.yml** sample config file for this, which should get renamed and symlinked to **~/.tmuxinator/**
+and, since i develop on a mac and also have to use some old PHP/apache apps from time to time and haven't figured out how to use [pow]() with those, i am using tmuxinator to set up and run server processes. included is a **your-app-name.yml** sample config file for this, which should get renamed and symlinked to **~/.tmuxinator/**
 
 
 What's Inside

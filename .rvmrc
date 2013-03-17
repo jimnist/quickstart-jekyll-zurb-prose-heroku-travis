@@ -1,0 +1,2 @@
+# change this to use your local gemset
+rvm use 1.9.3@quickstart --create
