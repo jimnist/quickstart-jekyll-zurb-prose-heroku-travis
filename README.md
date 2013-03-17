@@ -9,7 +9,7 @@ TODO
 Jekyll + ZURB Foundation Quickstart
 ===================================
 
-forked from [here](https://github.com/lvillani/quickstart-jekyll-zurb). 
+forked from [Jekyll + ZURB Foundation Quickstart](https://github.com/lvillani/quickstart-jekyll-zurb). 
 
 changed to NOT use HAML, since the main sites that i am using this for need to be edited by end users/site-owners via [prose.io](http://prose.io/). 
 
@@ -17,26 +17,31 @@ also set up to use prose.io and to deploy to [Heroku](http://heroku.com) using [
 
 i also got rid of `make setup` step generally, because the sites i use this for are not programming blogs and i think explicitly running `bundle install` makes more sense.
 
+i also modified the directory structure to be more like [octopress](http://octopress.org/) to have a **source** directory for the jekyll files so that i can point prose.io at that directory only and not have users mess with other files. i am also having output go to the top level **site** directory and sass files are generated from the **sass** directory.
+
+and, since i develop on a mac and also have to use some old PHP/apache apps from time to time and haven't figured out how to use [pow]() with those, i am using tmuxinator to set up and run server processes. included is a **tmuxinator.yml** sample config file for this, which should get renamed and symlinked to **~/.tmuxinator/**
+
 
 What's Inside
 =============
 
 ## Technologies
 
-* SASS
-* Compass;
-* ZURB Foundation;
-* Foreman;
-* prose.io
-* Heroku
-* Travis CI
+* [jekyll](http://jekyllrb.com/)
+* [SASS](http://sass-lang.com/)
+* [Compass](http://compass-style.org/)
+* [ZURB Foundation](http://foundation.zurb.com/)
+* [tmuxinator](https://github.com/aziz/tmuxinator)
+* [prose.io](http://prose.io/)
+* [Heroku](http://www.heroku.com/)
+* [Travis CI](https://travis-ci.org/)
 
 ## Goodies
 
 * Default page templates, suitable for a blog;
 * Sensible Jekyll defaults;
 * Site-wide Atom feed for all blog posts;
-* Uses Foreman to orchestrate `compass watch` and Jekyll development server;
+* Uses tmuxinator to orchestrate `compass watch` and Jekyll development server;
 
 
 
@@ -53,25 +58,6 @@ Clone this repository and perform the automated setup procedure:
 At this point you can start the development server by running:
 
     make runserver
-
-
-
-
-Directory & File Layout
-=======================
-
-    .
-    ├── asset/         -- Static assets (e.g.: images)
-    ├── _layouts/      -- Jekyll Layouts
-    ├── _posts/        -- Blog posts
-    ├── _sass/         -- SASS/SCSS (processed by Compass)
-    ├── _site/         -- Output directory for generated content
-    ├── _config.yml    -- Jekyll Configuration file
-    ├── compass.rb     -- Compass configuration file
-    ├── Gemfile        -- Ruby Bundler configuration file
-    ├── Makefile       -- Top level Makefile
-    ├── Procfile       -- Foreman configuration file
-    └── robots.txt     -- Directives for web crawlers
 
 
 

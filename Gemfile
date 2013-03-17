@@ -3,7 +3,7 @@
 source :rubygems
 
 gem "foreman"
-gem "haml"
+# gem "haml"
 gem "jekyll"
 gem "rb-inotify"
 gem "rdiscount"

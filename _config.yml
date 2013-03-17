@@ -4,7 +4,7 @@
 
 markdown: rdiscount
 permalink: pretty
-pygments: true
+pygments: false
 
 # -----------------------------------------------
 # Site-specific Settings
@@ -12,5 +12,5 @@ pygments: true
 
 author: John Doe
 author_email: john@doe.com
-title: Jekyll Zurb Quickstart
-url: http://localhost:4000
+title: Jekyll Zurb Prose Heroku Travis Quickstart
+url: http://localhost:4444
