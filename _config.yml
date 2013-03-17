@@ -32,3 +32,10 @@ destination: site
 # category_dir: blog/categories
 markdown: rdiscount
 pygments: false # default python pygments have been replaced by pygments.rb
+
+prose:
+  rooturl: "source"
+  metadata:
+    "_posts": |
+      title:    "Title of your article"
+      abstract: "Abstract"  

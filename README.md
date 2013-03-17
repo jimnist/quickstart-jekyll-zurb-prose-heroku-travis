@@ -49,8 +49,6 @@ What's Inside
 * Uses tmuxinator to orchestrate `compass watch` and Jekyll development server;
 
 
-
-
 Getting Started
 ===============
 
@@ -60,10 +58,9 @@ Clone this repository and perform the automated setup procedure:
     cd my-jekyll-site
     bundle install
 
-At this point you can start the development server by running:
+go through the config files and change where appropriate, including setting the gemset in **.rvmrc**.
 
-    make runserver
-
+set up tmuxinator, and then you are off and running.
 
 
 
