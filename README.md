@@ -3,7 +3,8 @@ TODO
 
 * prose.io-ify
 * heroku-ify
-* travis ci deploy
+* travis ci deploy 
+* js minification
 * test rss
 
 
