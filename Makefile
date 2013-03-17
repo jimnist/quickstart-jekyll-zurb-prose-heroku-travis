@@ -22,12 +22,3 @@ runserver: clean compile
 
 .PHONY: all clean compile runserver
 
-#
-# Developer Setup
-#
-
-setup:
-	sudo apt-get -y install python-pygments
-	bundle install
-
-.PHONY: setup

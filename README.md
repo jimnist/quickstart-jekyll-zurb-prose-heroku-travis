@@ -1,3 +1,11 @@
+TODO
+====
+
+* un-HAML
+* prose.io-ify
+* heroku-ify
+* travis ci deploy
+
 Jekyll + ZURB Foundation Quickstart
 ===================================
 
@@ -7,7 +15,7 @@ changed to NOT use HAML, since the main sites that i am using this for need to b
 
 also set up to use prose.io and to deploy to [Heroku](http://heroku.com) using [Travis CI](http://travis-ci.org/) based on the strategy detailed [here](http://metabates.com/2012/10/23/deploying-to-heroku-from-travisci/).
 
-i also don't do the `make setup` step generally, because the sites i use this for are not programming blogs.
+i also got rid of `make setup` step generally, because the sites i use this for are not programming blogs and i think explicitly running `bundle install` makes more sense.
 
 
 What's Inside
@@ -19,6 +27,9 @@ What's Inside
 * Compass;
 * ZURB Foundation;
 * Foreman;
+* prose.io
+* Heroku
+* Travis CI
 
 ## Goodies
 
@@ -37,7 +48,7 @@ Clone this repository and perform the automated setup procedure:
 
     git clone https://github.com/ngn33r/quickstart-jekyll-zurb my-jekyll-site
     cd my-jekyll-site
-    make setup
+    bundle install
 
 At this point you can start the development server by running:
 
