@@ -10,6 +10,7 @@
         {% endif %}
         <link rel="alternate" href="{{ site.url }}/atom.xml" type="application/atom+xml" title="Sitewide ATOM Feed">
         <link rel="stylesheet" href="{{ site.url }}/css/app.css">
+        <script src="{{ site.url }}/js/modernizr.foundation.js"></script>        
     </head>
     <body>
     	<!-- Navigation -->
@@ -49,5 +50,15 @@
         </footer>
         <!-- JavaScript (deferred) -->
         <script src="{{ site.url }}/js/app.js"></script>
+
+    <script>
+      document.write('<script src="{{ site.url }}/js/'
+        + ('__proto__' in {} ? 'zepto' : 'jquery')
+        + '.js"><\/script>');
+    </script>
+    <script>
+      $(document).foundation();
+    </script>
+
     </body>
 </html>
