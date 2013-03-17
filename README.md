@@ -1,14 +1,11 @@
 Jekyll + ZURB Foundation Quickstart
 ===================================
 
-A template project to quickly start a new project based on ZURB Foundation
-and the Jekyll static site generator.
+forked from [here](https://github.com/lvillani/quickstart-jekyll-zurb). 
 
-Unlike other projects (such as Octopress), this is a minimal skeleton
-repository upon which you can build your project. You _have_ to understand
-all the moving parts and how they are configured.
+changed to NOT use HAML, since the main sites that i am using this for need to be edited by end users/site-owners via [prose.io](http://prose.io/). 
 
-
+also set up to use prose.io and to deploy to [Heroku](http://heroku.com) using [Travis CI](http://travis-ci.org/) based on the strategy detailed [here](http://metabates.com/2012/10/23/deploying-to-heroku-from-travisci/).
 
 
 What's Inside
@@ -36,8 +33,8 @@ Getting Started
 
 Clone this repository and perform the automated setup procedure:
 
-    git clone git://github.com/lvillani/quickstart-jekyll-zurb.git my-site
-    cd my-site
+    git clone https://github.com/ngn33r/quickstart-jekyll-zurb my-jekyll-site
+    cd my-jekyll-site
     make setup
 
 At this point you can start the development server by running:
